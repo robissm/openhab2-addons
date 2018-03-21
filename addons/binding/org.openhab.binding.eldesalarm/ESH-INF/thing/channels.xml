@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="eldesAlarm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+    xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+  
+    <!-- Zone Group Type -->
+    <channel-group-type id="zonegroup">
+        <label>Zones</label>
+        <description>Eldes alarm zones (contact)</description>
+        <channels>
+            <channel id="Z1" typeId="zone" />
+            <channel id="Z2" typeId="zone" />
+            <channel id="Z3" typeId="zone" />
+            <channel id="Z4" typeId="zone" />
+            <channel id="Z5" typeId="zone" />
+            <channel id="Z6" typeId="zone" />
+            <channel id="Z7" typeId="zone" />
+            <channel id="Z8" typeId="zone" />
+            <channel id="Z9" typeId="zone" />
+            <channel id="Z10" typeId="zone" />
+            <channel id="Z11" typeId="zone" />
+            <channel id="Z12" typeId="zone" />
+            <channel id="Z13" typeId="zone" />
+            <channel id="Z14" typeId="zone" />
+            <channel id="Z15" typeId="zone" />
+            <channel id="Z16" typeId="zone" />
+            <channel id="Z17" typeId="zone" />
+            <channel id="Z18" typeId="zone" />
+            <channel id="Z19" typeId="zone" />
+            <channel id="Z20" typeId="zone" />
+            <channel id="Z21" typeId="zone" />
+            <channel id="Z22" typeId="zone" />
+            <channel id="Z23" typeId="zone" />
+            <channel id="Z24" typeId="zone" />
+            <channel id="Z25" typeId="zone" />
+            <channel id="Z26" typeId="zone" />
+            <channel id="Z27" typeId="zone" />
+            <channel id="Z28" typeId="zone" />
+            <channel id="Z29" typeId="zone" />
+            <channel id="Z30" typeId="zone" />
+            <channel id="Z31" typeId="zone" />
+            <channel id="Z32" typeId="zone" />
+            <channel id="Z33" typeId="zone" />
+            <channel id="Z34" typeId="zone" />
+            <channel id="Z35" typeId="zone" />
+            <channel id="Z36" typeId="zone" />
+            <channel id="Z37" typeId="zone" />
+            <channel id="Z38" typeId="zone" />
+            <channel id="Z39" typeId="zone" />
+            <channel id="Z40" typeId="zone" />
+            <channel id="Z41" typeId="zone" />
+            <channel id="Z42" typeId="zone" />
+            <channel id="Z43" typeId="zone" />
+            <channel id="Z44" typeId="zone" />
+            <channel id="Z45" typeId="zone" />
+            <channel id="Z46" typeId="zone" />
+            <channel id="Z47" typeId="zone" />
+            <channel id="Z48" typeId="zone" />
+            <channel id="Z49" typeId="zone" />
+            <channel id="Z50" typeId="zone" />
+            <channel id="Z51" typeId="zone" />
+            <channel id="Z52" typeId="zone" />
+            <channel id="Z53" typeId="zone" />
+            <channel id="Z54" typeId="zone" />
+            <channel id="Z55" typeId="zone" />
+            <channel id="Z56" typeId="zone" />
+            <channel id="Z57" typeId="zone" />
+            <channel id="Z58" typeId="zone" />
+            <channel id="Z59" typeId="zone" />
+            <channel id="Z60" typeId="zone" />
+            <channel id="Z61" typeId="zone" />
+            <channel id="Z62" typeId="zone" />
+            <channel id="Z63" typeId="zone" />
+            <channel id="Z64" typeId="zone" />
+            <channel id="Z65" typeId="zone" />
+            <channel id="Z66" typeId="zone" />
+            <channel id="Z67" typeId="zone" />
+            <channel id="Z68" typeId="zone" />
+            <channel id="Z69" typeId="zone" />
+            <channel id="Z70" typeId="zone" />
+            <channel id="Z71" typeId="zone" />
+            <channel id="Z72" typeId="zone" />
+            <channel id="Z73" typeId="zone" />
+            <channel id="Z74" typeId="zone" />
+            <channel id="Z75" typeId="zone" />
+            <channel id="Z76" typeId="zone" />
+        </channels>
+    </channel-group-type>
+
+    <channel-type id="zone">
+        <item-type>Contact</item-type>
+        <label>Zone</label>
+        <description>channel type for Eldes alarm zones (contact)</description>
+        <category>Contact</category>
+        <state readOnly="true" />
+        <config-description-ref uri="channel-type:zone:config" />
+    </channel-type>
+
+</thing:thing-descriptions>

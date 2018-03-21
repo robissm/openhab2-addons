@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="eldesAlarm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+    xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <thing-type id="eldesAlarm">
+        <label>Eldes Alarm</label>
+        <description>Thing for Eldes Alarm </description>
+        <channel-groups>
+            <channel-group id="zone" typeId="zonegroup"/>
+        </channel-groups>
+        <config-description>
+            <parameter name="alarmType" type="text" required="false">
+                <label>Alarm type</label>
+                <description>Alarm panel type</description>               
+                <options>
+                    <option value="esim364">esim364</option>
+                </options>    
+                <default>esim364</default>          
+            </parameter>
+            <parameter name="connectionType" type="text" required="false">
+                <label>Connection type</label>
+                <description>Interface type for connecting to alarm panel</description>
+                <options>
+                    <option value="usb">usb</option>
+                </options>
+                <default>usb</default>
+            </parameter>
+            <parameter name="pollingInterval" type="integer" required="false">
+                <label>Polling interval</label>
+                <description>Polling interval in ms</description>
+                <default>50</default>
+            </parameter>
+            <parameter name="login" type="text" required="true">
+                <label>Login</label>
+                <description>Panel login code (4/6 digits)</description>
+                <default>0000</default>
+            </parameter>
+        </config-description>
+    </thing-type>
+
+</thing:thing-descriptions>
