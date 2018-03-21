@@ -23,6 +23,8 @@ KERNEL=="hidraw*", SUBSYSTEM=="hidraw", GROUP="input", MODE="0666"
 | alarmType       | Eldes alarm type: esim364                     | "esim354"     |     
 | connectionType  | Panel connection type: usb                    | "usb"         |
 | pollingInterval | PanelpPolling interval in ms                  | 50            |
+| login           | Login code                                    | 12            |
+
 
 ## Channels
 
@@ -42,12 +44,12 @@ Let's imagine a setup with Eldes alarm panel ESIM364 connected through USB, with
 *   Things:
 
 ```
-eldesAlarm:eldesAlarm:esim364:usb  "Eldes Alarm ESIM364 usb connected panel" [alarmType=esim364,connectionType=usb]
+eldesAlarm:eldesAlarm:esim364  "Eldes Alarm ESIM364 usb connected panel" [alarmType=esim364,connectionType=usb,pollingInterval=50,login=0000]
 ```
 
 *   Items:
 
 ```
-Contact living_room_PIR_contact "Living room PIR "  {channel=" eldesAlarm:esim364:usb:zone#Z1"}
+Contact living_room_PIR_contact "Living room PIR "  {channel="eldesAlarm:eldesAlarm:esim364:zone#Z1"}
 ```
 
